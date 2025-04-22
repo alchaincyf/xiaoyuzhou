@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="好柿花生 - 发现有趣的声音，聆听精选播客内容">
+  <meta name="keywords" content="播客,podcast,音频,好柿花生,声音">
+  <meta name="theme-color" content="#FF6B35">
+  <title>好柿花生 - 发现有趣的声音</title>
+  
+  <!-- 预加载字体 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- 图标库 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  
+  <!-- 网站样式 -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+  <!-- 无障碍跳转链接 -->
+  <a href="#main-content" class="skip-link">跳到主要内容</a>
+  
+  <!-- 导航栏 -->
+  <header class="navbar">
+    <div class="navbar__container container">
+      <div class="navbar__brand">
+        <a href="/">
+          <img src="assets/images/logo.svg" alt="好柿花生播客" class="navbar__logo">
+          <span class="navbar__title">好柿花生</span>
+        </a>
+      </div>
+      
+      <button class="navbar__toggle" aria-expanded="false" aria-controls="main-menu">
+        <i class="bi bi-list"></i>
+        <span class="sr-only">菜单</span>
+      </button>
+      
+      <nav>
+        <ul id="main-menu" class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/" class="navbar__link navbar__link--active">首页</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/discover" class="navbar__link">发现</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/collections" class="navbar__link">专辑</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/about" class="navbar__link">关于我们</a>
+          </li>
+          <li class="navbar__item">
+            <div class="navbar__search">
+              <input type="search" class="navbar__search-input" placeholder="搜索播客和剧集..." aria-label="搜索">
+              <button class="navbar__search-button" aria-label="搜索按钮">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      
+      <div class="d-none d-md-flex">
+        <a href="/login" class="btn btn--outline mr-2">登录</a>
+        <a href="/register" class="btn btn--primary">注册</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 主内容区 -->
+  <main id="main-content">
+    <!-- 英雄区域 -->
+    <section class="hero">
+      <div class="hero__overlay"></div>
+      <div class="container hero__container">
+        <div class="hero__content">
+          <h1 class="hero__title neon-text">发现好声音<br>聆听好故事</h1>
+          <p class="hero__subtitle">好柿花生，为你精选全球优质播客内容，随时随地尽享声音的魅力</p>
+          <div class="hero__actions">
+            <a href="/discover" class="btn btn--primary btn--large">立即收听</a>
+            <a href="/register" class="btn btn--outline btn--large ml-3">免费注册</a>
+          </div>
+        </div>
+        <div class="hero__image-container">
+          <img src="assets/images/hero-image.png" alt="听播客的人" class="hero__image">
+        </div>
+      </div>
+    </section>
+
+    <!-- 热门推荐 -->
+    <section class="section section--trending">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">热门推荐</h2>
+          <a href="/discover?category=trending" class="section__more">查看全部 <i class="bi bi-chevron-right"></i></a>
+        </header>
+        
+        <div class="row">
+          <!-- 热门播客卡片1 -->
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <div class="podcast-card card">
+              <div class="podcast-card__image-container">
+                <img src="https://source.unsplash.com/random/400x400?podcast,microphone,1" alt="科技早知道" class="podcast-card__image">
+              </div>
+              <div class="podcast-card__content">
+                <h3 class="podcast-card__title">科技早知道</h3>
+                <p class="podcast-card__author">by 张三</p>
+                <p class="podcast-card__description">关注科技行业热点资讯，深度分析科技趋势，每日为您提供最新科技动态解读。</p>
+                <div class="podcast-card__meta">
+                  <span class="podcast-card__meta-item">
+                    <i class="bi bi-headphones podcast-card__meta-icon"></i>
+                    156万
+                  </span>
+                  <span class="podcast-card__meta-item">
+                    <i class="bi bi-star-fill podcast-card__meta-icon"></i>
+                    4.8
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 这里省略其他卡片内容... -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 mb-4">
+            <div class="footer__brand">
+              <img src="assets/images/logo.svg" alt="好柿花生播客" class="footer__logo">
+              <h3 class="footer__title">好柿花生</h3>
+            </div>
+            <p class="footer__description">
+              发现优质有声内容，随时随地，聆听精彩。
+            </p>
+            <div class="footer__social">
+              <a href="#" class="footer__social-link" aria-label="微信">
+                <i class="bi bi-wechat"></i>
+              </a>
+              <a href="#" class="footer__social-link" aria-label="微博">
+                <i class="bi bi-sina-weibo"></i>
+              </a>
+              <a href="#" class="footer__social-link" aria-label="GitHub">
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-6 col-md-2 mb-4">
+            <h4 class="footer__heading">导航</h4>
+            <ul class="footer__links">
+              <li><a href="/" class="footer__link">首页</a></li>
+              <li><a href="/discover" class="footer__link">发现</a></li>
+              <li><a href="/collections" class="footer__link">专辑</a></li>
+              <li><a href="/about" class="footer__link">关于我们</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-2 mb-4">
+            <h4 class="footer__heading">资源</h4>
+            <ul class="footer__links">
+              <li><a href="/help" class="footer__link">帮助中心</a></li>
+              <li><a href="/faq" class="footer__link">常见问题</a></li>
+              <li><a href="/creators" class="footer__link">创作者中心</a></li>
+              <li><a href="/api" class="footer__link">API文档</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-2 mb-4">
+            <h4 class="footer__heading">法律</h4>
+            <ul class="footer__links">
+              <li><a href="/terms" class="footer__link">使用条款</a></li>
+              <li><a href="/privacy" class="footer__link">隐私政策</a></li>
+              <li><a href="/copyright" class="footer__link">版权声明</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-2 mb-4">
+            <h4 class="footer__heading">下载</h4>
+            <ul class="footer__links">
+              <li><a href="#" class="footer__link">iOS版</a></li>
+              <li><a href="#" class="footer__link">Android版</a></li>
+              <li><a href="#" class="footer__link">桌面版</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__copyright">© 2023 好柿花生. 保留所有权利.</p>
+          <div class="footer__locale">
+            <select aria-label="选择语言" class="footer__locale-select">
+              <option value="zh-CN" selected>简体中文</option>
+              <option value="en-US">English</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- 回到顶部按钮 -->
+  <button id="back-to-top" class="back-to-top" aria-label="回到顶部">
+    <i class="bi bi-arrow-up-short"></i>
+  </button>
+
+  <!-- 音频播放器 -->
+  <div class="player player--minimized">
+    <button class="player__toggle" aria-label="展开播放器">
+      <i class="bi bi-chevron-up"></i>
+    </button>
+    <div class="player__container">
+      <div class="player__artwork-container">
+        <img src="https://source.unsplash.com/random/80x80?podcast,cover,1" alt="播客封面" class="player__artwork">
+      </div>
+      <div class="player__info">
+        <h3 class="player__title">如何高效学习一门新技能</h3>
+        <p class="player__author">成长思维 · 第23集</p>
+      </div>
+      <div class="player__controls">
+        <button class="audio-controls__button" aria-label="上一集">
+          <i class="bi bi-skip-backward-fill"></i>
+        </button>
+        <button class="audio-controls__button audio-controls__button--primary" aria-label="播放">
+          <i class="bi bi-play-fill"></i>
+        </button>
+        <button class="audio-controls__button" aria-label="下一集">
+          <i class="bi bi-skip-forward-fill"></i>
+        </button>
+      </div>
+      <div class="player__time">
+        <span class="player__time-current">2:15</span>
+        <div class="player__progress">
+          <div class="player__progress-bar" style="width: 30%"></div>
+        </div>
+        <span class="player__time-total">7:30</span>
+      </div>
+      <div class="player__actions">
+        <button class="player__action-button" aria-label="播放速度">
+          <i class="bi bi-speedometer"></i>
+        </button>
+        <button class="player__action-button" aria-label="添加到收藏">
+          <i class="bi bi-heart"></i>
+        </button>
+        <button class="player__action-button" aria-label="添加到播放列表">
+          <i class="bi bi-plus-circle"></i>
+        </button>
+        <button class="player__action-button" aria-label="分享">
+          <i class="bi bi-share"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 暗色模式切换按钮 -->
+  <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="切换暗色模式" aria-checked="false">
+    <i class="bi bi-moon-fill"></i>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
